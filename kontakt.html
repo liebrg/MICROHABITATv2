@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de" data-lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="MICROHABITAT — Kontakt." />
+<title>MICROHABITAT — Kontakt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css?v=11" />
+<script src="script.js?v=11" defer></script>
+</head>
+<body>
+  <header class="site-header compact-header">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menü"><span></span><span></span></button>
+    <nav aria-label="Hauptnavigation" id="siteNav" class="hero-nav">
+      <a href="index.html"><span data-de="HOME" data-en="HOME">HOME</span></a>
+      <a href="projekte.html"><span data-de="PROJEKTE" data-en="PROJECTS">PROJEKTE</span></a>
+      <a href="about.html"><span data-de="ÜBER UNS" data-en="ABOUT US">ÜBER UNS</span></a>
+      <a href="kontakt.html" aria-current="page"><span data-de="KONTAKT" data-en="CONTACT">KONTAKT</span></a>
+    </nav>
+    <button class="lang-toggle" type="button" aria-label="Sprache wechseln">
+      <span class="lang-de">DE</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+    </button>
+  </header>
+
+  <main class="doc contact-page">
+    <div class="contact-wrap">
+      <p class="lead" data-de="Lass uns gemeinsam etwas wachsen lassen." data-en="Let’s grow something together.">Lass uns gemeinsam etwas wachsen lassen.</p>
+
+      <form class="contact-form" action="#" method="post">
+        <label class="field">
+          <span data-de="NAME" data-en="NAME">NAME</span>
+          <input type="text" name="name" aria-label="Name" />
+        </label>
+
+        <label class="field">
+          <span data-de="EMAIL" data-en="EMAIL">EMAIL</span>
+          <input type="email" name="email" aria-label="Email" />
+        </label>
+
+        <label class="field">
+          <span data-de="NACHRICHT" data-en="MESSAGE">NACHRICHT</span>
+          <textarea name="message" aria-label="Nachricht"></textarea>
+        </label>
+
+        <button type="submit" data-de="SENDEN" data-en="SEND">SENDEN</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span data-de="Wien" data-en="Vienna">Wien</span>
+    <span>© 2026</span>
+  </footer>
+</body>
+</html>

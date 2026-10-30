@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Desktop/Images copy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MICROHABITATv2"
+	}
+}

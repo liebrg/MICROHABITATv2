@@ -7,48 +7,58 @@
 <title>MICROHABITAT</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap">
-<link rel="stylesheet" href="style.css?v=9" />
-<script src="script.js?v=9" defer></script>
+<link rel="stylesheet" href="style.css?v=10" />
+<script src="script.js?v=10" defer></script>
 </head>
 <body class="home">
   <header class="site-header">
-    <a class="mark" href="index.html">MICROHABITAT <span class="mark-sub">studio</span></a>
-    <nav aria-label="Hauptnavigation" id="siteNav">
-      <a href="index.html" aria-current="page"><span data-de="Home" data-en="Home">Home</span></a>
-      <a href="projekte.html"><span data-de="Projekte" data-en="Projects">Projekte</span></a>
-      <a href="about.html"><span data-de="Über uns" data-en="About">Über uns</span></a>
-      <a href="kontakt.html"><span data-de="Kontakt" data-en="Contact">Kontakt</span></a>
-    </nav>
+    <a class="mark" href="index.html">MICROHABITAT</a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Menü"><span></span><span></span></button>
-    <button class="lang-toggle" type="button" aria-label="Sprache wechseln">
-      <span class="lang-de">DE</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
-    </button>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="Homepage hero image">
       <div class="hero-shade" aria-hidden="true"></div>
       <div class="hero-light" aria-hidden="true"></div>
-      <p class="kicker" data-de="microhabitat — Studio für ökologische Landschaftsgestaltung" data-en="microhabitat — Studio for ecological landscape design">microhabitat — Studio für ökologische Landschaftsgestaltung</p>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sand-layer"></div>
+        <div class="moss moss-a"></div>
+        <div class="moss moss-b"></div>
+        <div class="moss moss-c"></div>
+        <div class="stone stone-1"></div>
+        <div class="stone stone-2"></div>
+        <div class="stone stone-3"></div>
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="shell shell-1"></div>
+        <div class="shell shell-2"></div>
+        <div class="shell shell-3"></div>
+        <div class="bee bee-1"></div>
+        <div class="bee bee-2"></div>
+      </div>
 
-      <h1>MICROHABITAT</h1>
+      <div class="hero-center-mark">
+        <span>MICROHABITAT</span>
+        <span class="studio-tag">studio</span>
+      </div>
 
-      <p class="lead" data-de="Wir gestalten ökologische Gärten und lebendige Mikro-Ökosysteme." data-en="We design ecological gardens and living micro-ecosystems.">Wir gestalten ökologische Gärten und lebendige Mikro-Ökosysteme.</p>
+      <div class="hero-rail" aria-label="Primary navigation and language switch">
+        <button class="lang-toggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Sprache wechseln">
+          <span class="lang-de">DE</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+        </button>
 
-      <a class="hero-work-link" href="projekte.html"><span data-de="Projekte ansehen" data-en="View projects">Projekte ansehen</span></a>
-    </section>
-
-    <section class="closing">
-      <p class="prompt" data-de="Ein Ort beginnt mit einem Gespräch." data-en="A place begins with a conversation.">Ein Ort beginnt mit einem Gespräch.</p>
-      <h2 data-de="Raum für Natur." data-en="Space for nature.">Raum für Natur.</h2>
-      <a href="kontakt.html"><span data-de="Projekt anfragen" data-en="Get in touch">Projekt anfragen</span></a>
+        <nav aria-label="Hauptnavigation" id="siteNav" class="hero-nav">
+          <a href="index.html" aria-current="page"><span data-de="HOME" data-en="HOME">HOME</span></a>
+          <a href="projekte.html"><span data-de="PROJEKTE" data-en="PROJECTS">PROJEKTE</span></a>
+          <a href="about.html"><span data-de="ÜBER UNS" data-en="ABOUT US">ÜBER UNS</span></a>
+          <a href="kontakt.html"><span data-de="KONTAKT" data-en="CONTACT">KONTAKT</span></a>
+        </nav>
+      </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <span class="mark">MICROHABITAT <span class="mark-sub">studio</span></span>
-    <span data-de="Wien" data-en="Vienna">Wien</span>
-    <span>© 2026</span>
-  </footer>
+  <footer class="site-footer"></footer>
 </body>
 </html>

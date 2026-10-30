@@ -20,18 +20,27 @@ if (langToggle) {
 // mobile menu toggle
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.getElementById("siteNav");
-if (menuToggle && siteNav) {
+
+if (siteNav) {
   const closeMenu = () => {
-    menuToggle.setAttribute("aria-expanded", "false");
+    if (menuToggle) {
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
     siteNav.classList.remove("is-open");
     document.body.classList.remove("menu-open");
   };
-  menuToggle.addEventListener("click", () => {
-    const open = menuToggle.getAttribute("aria-expanded") === "true";
-    menuToggle.setAttribute("aria-expanded", String(!open));
+
+  const toggleMenu = (button) => {
+    const open = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!open));
     siteNav.classList.toggle("is-open", !open);
     document.body.classList.toggle("menu-open", !open);
-  });
+  };
+
+  if (menuToggle) {
+    menuToggle.addEventListener("click", () => toggleMenu(menuToggle));
+  }
+
   siteNav.querySelectorAll("a").forEach((a) => a.addEventListener("click", closeMenu));
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeMenu();
